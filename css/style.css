@@ -1,0 +1,65 @@
+/* General Styling Start */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* General Styling End */
+
+/* Header Start */
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: darkblue;
+    box-shadow: 0px 14px 8px 3px rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header ul li{
+    display: inline-block;
+}
+
+/* Header End */
+
+/* Footer Start */
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: darkslateblue;
+    display: flex;
+}
+
+/* Footer End */
+
+/* Front Page Start */
+
+#container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 30px;
+    background-color: #2196F3;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.box{
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    justify-self: center;
+}
+
+/* Front Page End */
