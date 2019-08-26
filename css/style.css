@@ -45,7 +45,7 @@ footer{
 #container{
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto;
     grid-gap: 30px;
     background-color: #2196F3;
     padding: 10px;
@@ -56,10 +56,61 @@ footer{
 
 .box{
     background-color: blue;
-    width: 200px;
-    height: 200px;
     align-self: center;
     justify-self: center;
 }
 
+.box img{
+    width: 300px;
+    height: auto;
+}
+
+.box h4{
+    margin: 8px;
+    text-align: center;
+}
+
+#welcome-text-container{
+    width: 100%;
+    height: 70vh;
+}
+
+.text-container{
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 330px;
+    position: relative;
+    top: 40%;
+    border: 2px solid black;
+    border-radius: 15px;
+}
+
+.text-container h1{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.text-container h1:nth-child(1){
+    background-color: aqua;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+.text-container h1:nth-child(2){
+    background-color: brown;
+    border-radius: 0 0 15px 15px;
+}
+
 /* Front Page End */
+
+@media screen and (min-width: 700px) {
+    #container {
+        grid-template-columns: auto auto;
+    }
+}
+@media screen and (min-width: 1000px) {
+    #container {
+        grid-template-columns: auto auto auto;
+    }
+}
