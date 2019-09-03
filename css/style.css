@@ -16,15 +16,55 @@ a{
 
 header{
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: #4D4847;
     box-shadow: 0px 14px 8px 3px rgba(0,0,0,0.75);
     display: flex;
     justify-content: space-evenly;
 }
 
+header ul{
+    list-style-type: none;
+}
+
 header ul li{
-    display: inline-block;
+    padding: 5px;
+    color: black;
+    background-color: white;
+    border: 1.5px solid black;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+}
+
+header ul li:hover{
+    color: white;
+    border-color: white;
+    background-color: black;
+    transition-duration: 0.3s;
+}
+
+header ul li a{
+    font-weight: bold;
+    color: black;
+    transition-duration: 0.3s;
+}
+
+header ul li a:hover{
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.nav-container, .logo-container{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.nav-container{
+    margin-top: 5px;
+}
+
+.logo-container{
+    margin-top: 25px;
 }
 
 /* Header End */
@@ -36,6 +76,22 @@ footer{
     height: 100px;
     background-color: #4D4847;
     display: flex;
+    justify-content: space-evenly;
+}
+
+footer div a{
+    font-weight: bolder;
+    color: black;
+    transition-duration: 0.3s;
+}
+footer div a:hover{
+    transition-duration: 0.3s;
+    color: white;
+}
+
+footer div{
+    margin-top: 30px;
+    text-align: center;
 }
 
 /* Footer End */
@@ -201,10 +257,32 @@ footer{
 
 .content-box{
     width: 330px;
-    height: 330px;
     margin: 15px;
     background-color: #4D4847;
     border-radius: 15px;
+    border: 2px dashed #8BAAAD;
+}
+
+.content-box img{
+    width: 320px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.content-box h1, p{
+    text-align: center;
+    margin: 5px;
+}
+
+.content-box h1{
+    text-decoration: underline;
+}
+
+.content-box p{
+    margin-top: 12px;
+    margin-bottom: 12px;
 }
 
 #welcome-text-container, .about-container{
@@ -218,6 +296,20 @@ footer{
 
 /* Media Queries Start */
 
+@media screen and (min-width: 387px) {
+    .nav-container{
+        margin-top: 13px;
+    }
+}
+@media screen and (min-width: 550px) {
+    .nav-container{
+        margin-top: 40px;
+    }
+
+    header ul li{
+        display: inline-block;
+    }
+}
 @media screen and (min-width: 700px) {
     #container {
         grid-template-columns: auto auto;
